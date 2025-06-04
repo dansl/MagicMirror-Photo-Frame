@@ -16,7 +16,7 @@ Setup a Raspberry Pi with a small 7" or 10" touch screen, running MagicMirror an
   - [MMM-Pages](https://github.com/edward-shen/MMM-pages)
   - [MMM-TouchButton](https://github.com/Tom-Hirschberger/MMM-TouchButton)
   - [MMM-ModuleScheduler](https://github.com/ianperrin/MMM-ModuleScheduler)
-- Downlod the Config.js and Custom.css files from this repo.
+- Download the [Config.js](https://github.com/dansl/MagicMirror-Photo-Frame/raw/refs/heads/main/config.js) and [Custom.css](https://github.com/dansl/MagicMirror-Photo-Frame/raw/refs/heads/main/custom.css) files from this repo.
   - Edit the Config.js file and find ```"/home/magicmirror/Pictures"```.
     - You will need to change this path to match your Pictures path on the Raspberry Pi. Typically, it will be something like ```"/home/username/Pictures"```.
   - Place edited Config.js in the "~/MagicMirror/config" folder.
