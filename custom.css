@@ -15,3 +15,23 @@ body {
 .MMM-TouchButton .touchButton .button.icon {
 	font-size: 30px;
 }
+
+.system-menu .touchButton .button.icon {
+	font-size: 50px;
+}
+
+.system-menu .touchButton {
+	padding-right: 50px;
+}
+
+.system-menu .touchButton:last-of-type {
+	padding-right: 0;
+}
+
+.system-menu {
+	margin: auto;
+}
+
+.dim-btn .touchButton {
+	opacity: 0.5;
+}

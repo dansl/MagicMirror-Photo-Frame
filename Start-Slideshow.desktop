@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Start Slideshow
+Comment=Start MagicMirror Slideshow
+Exec=pm2 start mm
+Icon=emblem-photos
+Terminal=false
+Type=Application
+Categories=Utility;

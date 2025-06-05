@@ -1,6 +1,8 @@
 let DIM_LEVEL = "35";
-let TIME_START = "0 7 * * *"; //7AM screen will light up and start slideshow
-let TIME_END = "0 23 * * *"; //11PM screen will dim and stop slideshow
+let UNDIM_TIME_START = "0 7 * * *"; //7AM screen will light up and start slideshow
+let UNDIM_TIME_START_FIX = "1 7 * * *"; //Set this 1 minute after START time to fix modules not dimming/undimming
+let UNDIM_TIME_END = "0 23 * * *"; //11PM screen will dim and stop slideshow
+let UNDIM_TIME_END_FIX = "1 23 * * *"; //Set this 1 minute after END time to fix modules not dimming/undimming
 
 let config = {
 	address: "localhost",
@@ -30,8 +32,8 @@ let config = {
 			config: {
 				displaySeconds: false,
 				module_schedule: {
-					from: TIME_START,
-					to: TIME_END,
+					from: UNDIM_TIME_START,
+					to: UNDIM_TIME_END,
 					dimLevel: DIM_LEVEL,
 				},
 			},
@@ -48,8 +50,8 @@ let config = {
 				lon: -94.694219,
 				maxNumberOfDays: 4,
 				module_schedule: {
-					from: TIME_START,
-					to: TIME_END,
+					from: UNDIM_TIME_START,
+					to: UNDIM_TIME_END,
 					dimLevel: DIM_LEVEL,
 				},
 			},
@@ -90,8 +92,8 @@ let config = {
 					anytime: ["Good Night"],
 				},
 				module_schedule: {
-					from: TIME_START,
-					to: TIME_END,
+					from: UNDIM_TIME_START,
+					to: UNDIM_TIME_END,
 					dimLevel: DIM_LEVEL,
 				},
 			},
@@ -99,13 +101,8 @@ let config = {
 		{
 			module: "MMM-TouchButton",
 			position: "top_right",
-			classes: "page0 scheduler",
+			classes: "page0 dim-btn",
 			config: {
-				module_schedule: {
-					from: TIME_START,
-					to: TIME_END,
-					dimLevel: DIM_LEVEL,
-				},
 				buttons: [
 					{
 						name: "Prev",
@@ -123,17 +120,12 @@ let config = {
 		{
 			module: "MMM-TouchButton",
 			position: "top_left",
-			classes: "page0 scheduler",
+			classes: "page0 dim-btn",
 			config: {
-				module_schedule: {
-					from: TIME_START,
-					to: TIME_END,
-					dimLevel: DIM_LEVEL,
-				},
 				buttons: [
 					{
 						name: "Night",
-						icon: "fa fa-moon-o fa-3x",
+						icon: "fa fa-moon-o",
 						notification: "PAGE_CHANGED",
 						payload: 1,
 					},
@@ -143,19 +135,74 @@ let config = {
 		{
 			module: "MMM-TouchButton",
 			position: "top_left",
-			classes: "page1 scheduler",
+			classes: "page1 dim-btn",
 			config: {
-				module_schedule: {
-					from: TIME_START,
-					to: TIME_END,
-					dimLevel: DIM_LEVEL,
-				},
 				buttons: [
 					{
 						name: "Sun",
-						icon: "fa fa-picture-o fa-3x",
+						icon: "fa fa-picture-o",
 						notification: "PAGE_CHANGED",
 						payload: 0,
+					},
+				],
+			},
+		},
+		{
+			module: "MMM-TouchButton",
+			position: "bottom_center",
+			classes: "page0 page1 dim-btn",
+			config: {
+				buttons: [
+					{
+						name: "Settings",
+						icon: "fa fa-cog",
+						notification: "PAGE_CHANGED",
+						payload: 2,
+					},
+				],
+			},
+		},
+		{
+			module: "MMM-TouchButton",
+			position: "bottom_center",
+			classes: "page2",
+			config: {
+				buttons: [
+					{
+						name: "Exit",
+						icon: "fa fa-times-circle",
+						notification: "PAGE_CHANGED",
+						payload: 0,
+					},
+				],
+			},
+		},
+		{
+			module: "MMM-TouchButton",
+			position: "top_center",
+			classes: "page2 system-menu",
+			config: {
+				buttons: [
+					{
+						name: "Shutdown",
+						title: "Shutdown",
+						icon: "fa fa-power-off",
+						command: "sudo",
+						args: "shutdown -h now",
+					},
+					{
+						name: "Reboot",
+						title: "Reboot",
+						icon: "fa fa-refresh",
+						command: "sudo",
+						args: "reboot",
+					},
+					{
+						name: "Exit",
+						title: "Exit Slideshow",
+						icon: "fa fa-times",
+						command: "pm2",
+						args: "stop mm",
 					},
 				],
 			},
@@ -171,8 +218,16 @@ let config = {
 			module: "MMM-ModuleScheduler",
 			config: {
 				notification_schedule: [
-					{ notification: "PAGE_CHANGED", schedule: TIME_START, payload: 0 }, //Main Page
-					{ notification: "PAGE_CHANGED", schedule: TIME_END, payload: 1 }, // Night Page
+					{
+						notification: "PAGE_CHANGED",
+						schedule: UNDIM_TIME_START_FIX,
+						payload: 0,
+					}, //Main Page
+					{
+						notification: "PAGE_CHANGED",
+						schedule: UNDIM_TIME_END_FIX,
+						payload: 1,
+					}, // Night Page
 				],
 			},
 		},
