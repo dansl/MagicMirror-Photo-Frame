@@ -109,12 +109,12 @@ let config = {
 				buttons: [
 					{
 						name: "Prev",
-						icon: "fa fa-chevron-circle-left fa-3x",
+						icon: "fa fa-chevron-circle-left",
 						notification: "BACKGROUNDSLIDESHOW_PREV",
 					},
 					{
 						name: "Next",
-						icon: "fa fa-chevron-circle-right fa-3x",
+						icon: "fa fa-chevron-circle-right",
 						notification: "BACKGROUNDSLIDESHOW_NEXT",
 					},
 				],

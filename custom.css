@@ -2,12 +2,16 @@
 .dimmed,
 header,
 body {
-  color: #fff;
+	color: #fff;
 }
 
 :root {
-  --gap-body-top: 20px;
-  --gap-body-right: 20px;
-  --gap-body-bottom: 20px;
-  --gap-body-left: 20px;
+	--gap-body-top: 20px;
+	--gap-body-right: 20px;
+	--gap-body-bottom: 20px;
+	--gap-body-left: 20px;
+}
+
+.MMM-TouchButton .touchButton .button.icon {
+	font-size: 30px;
 }
