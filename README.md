@@ -27,3 +27,12 @@ Setup a Raspberry Pi with a small 7" or 10" touch screen, running MagicMirror an
 
 ## Recommendation
 - Follow [this guide](https://docs.magicmirror.builders/configuration/autostart.html) to setup Autostart with PM2. Then you can use the "Exit" button I setup on the system page as well as the [Desktop icon](https://github.com/dansl/MagicMirror-Photo-Frame/raw/refs/heads/main/Start-Slideshow.desktop) by placing it in your "~/Desktop" folder.
+
+## Screenshots
+![Screenshot 1](https://github.com/dansl/MagicMirror-Photo-Frame/blob/7a29c26a3ec8684508ddc74662d76c80fbb34192/screenshots/screenshot1.png)
+
+![Screenshot 2](https://github.com/dansl/MagicMirror-Photo-Frame/blob/7a29c26a3ec8684508ddc74662d76c80fbb34192/screenshots/screenshot2.png)
+
+![Screenshot 3](https://github.com/dansl/MagicMirror-Photo-Frame/blob/7a29c26a3ec8684508ddc74662d76c80fbb34192/screenshots/screenshot3.png)
+
+![Screenshot 4](https://github.com/dansl/MagicMirror-Photo-Frame/blob/7a29c26a3ec8684508ddc74662d76c80fbb34192/screenshots/screenshot4.png)
