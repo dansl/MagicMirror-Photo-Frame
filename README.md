@@ -4,12 +4,13 @@
 
 Setup a Raspberry Pi with a small 7" or 10" touch screen, running MagicMirror and a few modules.
 
-## Setup
-- Raspberry Pi 3 or better
-- Touch Display
-- [MagicMirror](https://github.com/MagicMirrorOrg/MagicMirror)
+## Hardware
+- Raspberry Pi 4 or better + Power Cable
+- Raspberry Pi compatable Touch Display (any size, but 7" or 10" recommended)
+- SD Card 32GB or more
 
 ## Steps
+- [Setup Raspian OS](https://www.raspberrypi.com/documentation/computers/getting-started.html) on your Raspberry Pi.
 - Follow the [MagicMirror tutorial](https://docs.magicmirror.builders) to start your setup. Once you are setup, continue below.
 - Install these Modules following their recommended steps:
   - [MMM-BackgroundSlideshow](https://github.com/darickc/MMM-BackgroundSlideshow)
