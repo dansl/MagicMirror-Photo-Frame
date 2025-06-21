@@ -12,7 +12,7 @@ Setup a Raspberry Pi with a small 7" or 10" touch screen, running MagicMirror an
 ## Steps
 - [Setup Raspian OS](https://www.raspberrypi.com/documentation/computers/getting-started.html) on your Raspberry Pi.
 - Follow the [MagicMirror tutorial](https://docs.magicmirror.builders) to start your setup. Once you are setup, continue below.
-- Install these Modules following their recommended steps:
+- Install these Modules following their recommended steps, you can skip the parts about adding lines to the config.js since my config already has that part included:
   - [MMM-BackgroundSlideshow](https://github.com/darickc/MMM-BackgroundSlideshow)
   - [MMM-Pages](https://github.com/edward-shen/MMM-pages)
   - [MMM-TouchButton](https://github.com/Tom-Hirschberger/MMM-TouchButton)
