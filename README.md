@@ -30,6 +30,7 @@ Setup a Raspberry Pi with a small 7" or 10" touch screen, running MagicMirror an
 ## Recommendation
 - Follow [this guide](https://docs.magicmirror.builders/configuration/autostart.html) to setup Autostart with PM2. Then you can use the "Exit" button I setup on the system page as well as the [Desktop icon](https://github.com/dansl/MagicMirror-Photo-Frame/raw/refs/heads/main/Start-Slideshow.desktop) by placing it in your "~/Desktop" folder.
 - Setup Dropbox or another service to easily sync your photos to the Pi. There are a few ways to do this, I chose to use this [Dropbox Uploader script](https://github.com/andreafabrizi/Dropbox-Uploader) to sync photos to my "~/Pictures" folder.
+  - For instance, I setup the script following the instructions, then setup a cron job to run every hour to download my photos. Edit your cron table by entering ```cronttab -e``` in terminal, then at the bottom add ```0 * * * * /home/username/Dropbox-Uploader/dropbox_uploader.sh download / /home/username/Pictures```, make sure to change the "username" with your Linux username. Press ctrl+x, press y, press enter, now it should run every hour!
 - Install "unattended-upgrades" so you dont need to periodically manually update the OS. Just open terminal and run ```sudo apt install unattended-upgrades```.
 - 3D Print a shell for your display. I saved a [few here](https://github.com/dansl/MagicMirror-Photo-Frame/tree/main/3D%20Print) that may work.
 
