@@ -12,12 +12,11 @@ Setup a Raspberry Pi with a small 7" or 10" touch screen, running MagicMirror an
 ## Steps
 - [Setup Raspian OS](https://www.raspberrypi.com/documentation/computers/getting-started.html) on your Raspberry Pi.
 - Follow the [MagicMirror tutorial](https://docs.magicmirror.builders) setup or follow command below.
-  - NOTE: At the time of writing this, nodejs on Raspian is on version 20, to simplify the process this will use an [older version of MagicMirror](https://github.com/MagicMirrorOrg/MagicMirror/releases/tag/v2.30.0). For the latest version, follow the official MagicMirror setup and manually install the latest nodejs.
+  - NOTE: At the time of writing this, nodejs on Raspian is on version 20, to simplify the process this will use [version 2.30.0 of MagicMirror](https://github.com/MagicMirrorOrg/MagicMirror/releases/tag/v2.30.0). For the latest version, follow the official MagicMirror setup and manually install the latest nodejs.
   - In Terminal run these commands in order:
     - ```sudo apt install nodejs npm```
-    - ```wget https://github.com/dansl/MagicMirror-Photo-Frame/raw/refs/heads/main/Assets/MagicMirror-2.30.0.zip```
-    - ```unzip v2.30.0.zip```
-    - ```mv MagicMirror-2.30.0/ MagicMirror/```
+    - ```wget https://github.com/dansl/MagicMirror-Photo-Frame/raw/refs/heads/main/Assets/MagicMirror.zip```
+    - ```unzip MagicMirror.zip```
     - ```cd MagicMirror```
     - ```npm install```
 - Install these Modules:
