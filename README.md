@@ -65,11 +65,11 @@ Setup a Raspberry Pi with a small 7" or 10" touch screen, run MagicMirror and a 
     - Copy and paste the command that it asks you to run, then continue to the next step.
   - ```cd ~```
   - ```nano mm.sh```
-  - Paste the below text into the window, then press 'ctrl+x', press 'y', press 'enter'
-    ```
-    cd ./MagicMirror
-    DISPLAY=:0 npm start
-    ```
+    - Paste the below text into the window, then press 'ctrl+x', press 'y', press 'enter'
+      ```
+      cd ./MagicMirror
+      DISPLAY=:0 npm start
+      ```
   - ```chmod +x mm.sh```
   - ```pm2 start mm.sh```
   - ```pm2 save```
