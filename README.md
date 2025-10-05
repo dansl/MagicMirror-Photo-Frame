@@ -2,7 +2,9 @@
 
 ***WORK IN PROGRESS***
 
-Setup a Raspberry Pi with a small 7" or 10" touch screen, running MagicMirror and a few modules.
+The concept is to have a "smart photo frame" that syncs your photos from dropbox or can easily upload photos via sftp, while also showing things like the current time and weather, and have basic touch controls. I used the app MagicMirror for simplicity sake. I tried to keep the steps as simple as possible, but this may require you to have come comfort with using Linux and command line.
+
+Setup a Raspberry Pi with a small 7" or 10" touch screen, run MagicMirror and a few modules, and you will have a self-hosted smart photo frame!
 
 ## Hardware
 - Raspberry Pi 4 or better + Power Cable
