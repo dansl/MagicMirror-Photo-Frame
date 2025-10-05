@@ -62,7 +62,7 @@ Setup a Raspberry Pi with a small 7" or 10" touch screen, run MagicMirror and a 
 - Setup [Autostart on boot with PM2](https://docs.magicmirror.builders/configuration/autostart.html). 
   - ```sudo npm install -g pm2```
   - ```pm2 startup```
-  -  Copy and paste the command that it asks you to run, then continue to the next step.
+    - Copy and paste the command that it asks you to run, then continue to the next step.
   - ```cd ~```
   - ```nano mm.sh```
   - Paste the below text into the window, then press 'ctrl+x', press 'y', press 'enter'
