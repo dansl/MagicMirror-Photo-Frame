@@ -61,7 +61,7 @@ let config = {
 			position: "fullscreen_below",
 			classes: "page0",
 			config: {
-				imagePaths: ["/home/magicmirror/Pictures"],
+				imagePaths: ["/home/pi/Pictures"],
 				transitionImages: true,
 				randomizeImageOrder: true,
 				slideshowSpeed: 30000,
