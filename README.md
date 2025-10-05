@@ -77,7 +77,7 @@ Setup a Raspberry Pi with a small 7" or 10" touch screen, run MagicMirror and a 
   - ```wget https://github.com/dansl/MagicMirror-Photo-Frame/raw/refs/heads/main/Start-Slideshow.desktop```
   - ```chmod +x Start-Slideshow.desktop```
 - Setup Dropbox or another service to easily sync your photos to the Pi. There are a few ways to do this, I chose to use this [Dropbox Uploader script](https://github.com/andreafabrizi/Dropbox-Uploader) to sync photos to my "~/Pictures" folder.
-  - For instance, I setup the script following the instructions, then setup a cron job to run every hour to download my photos.
+  - Setup the dropbox_uploader script following the instructions in the link above, then setup a cron job to run every hour to download photos.
     - Edit your cron table by entering ```crontab -e``` in terminal.
     - Then at the bottom add ```0 * * * * /home/username/Dropbox-Uploader/dropbox_uploader.sh download / /home/username/Pictures```
     - Make sure to change the 2 instances of "username" with your Linux username(ex: 'pi').
