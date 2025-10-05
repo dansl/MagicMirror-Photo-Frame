@@ -26,7 +26,7 @@ Setup a Raspberry Pi with a small 7" or 10" touch screen, running MagicMirror an
     - ```cd ~/MagicMirror/modules/```
     - ```wget https://github.com/dansl/MagicMirror-Photo-Frame/raw/refs/heads/main/Assets/MMM-BackgroundSlideshow.zip```
     - ```unzip MMM-BackgroundSlideshow.zip```
-    - ```cd MMM-BackgroundSlideshow-master```
+    - ```cd MMM-BackgroundSlideshow```
     - ```npm install```
   - [MMM-Pages](https://github.com/edward-shen/MMM-pages)
     - ```cd ~/MagicMirror/modules/```
@@ -36,13 +36,13 @@ Setup a Raspberry Pi with a small 7" or 10" touch screen, running MagicMirror an
     - ```cd ~/MagicMirror/modules/```
     - ```wget https://github.com/dansl/MagicMirror-Photo-Frame/raw/refs/heads/main/Assets/MMM-TouchButton.zip```
     - ```unzip MMM-TouchButton.zip```
-    - ```cd MMM-TouchButton-master```
+    - ```cd MMM-TouchButton```
     - ```npm install```
   - [MMM-ModuleScheduler](https://github.com/ianperrin/MMM-ModuleScheduler)
     - ```cd ~/MagicMirror/modules/```
     - ```wget https://github.com/dansl/MagicMirror-Photo-Frame/raw/refs/heads/main/Assets/MMM-ModuleScheduler.zip```
     - ```unzip MMM-ModuleScheduler.zip```
-    - ```cd MMM-ModuleScheduler-master```
+    - ```cd MMM-ModuleScheduler```
     - ```npm install --omit=dev```
 - Download the [Config.js](https://github.com/dansl/MagicMirror-Photo-Frame/raw/refs/heads/main/config.js) and [Custom.css](https://github.com/dansl/MagicMirror-Photo-Frame/raw/refs/heads/main/custom.css) files from this repo.
   - Edit the Config.js file and find ```"/home/magicmirror/Pictures"```.
@@ -68,6 +68,9 @@ Setup a Raspberry Pi with a small 7" or 10" touch screen, running MagicMirror an
   - ```chmod +x mm.sh```
   - ```pm2 start mm.sh```
   - ```pm2 save```
+  - ```cd ~/Desktop```
+  - ```wget https://github.com/dansl/MagicMirror-Photo-Frame/raw/refs/heads/main/Start-Slideshow.desktop```
+  - ```chmod +x Start-Slideshow.desktop```
 - Setup Dropbox or another service to easily sync your photos to the Pi. There are a few ways to do this, I chose to use this [Dropbox Uploader script](https://github.com/andreafabrizi/Dropbox-Uploader) to sync photos to my "~/Pictures" folder.
   - For instance, I setup the script following the instructions, then setup a cron job to run every hour to download my photos.
     - Edit your cron table by entering ```crontab -e``` in terminal.
