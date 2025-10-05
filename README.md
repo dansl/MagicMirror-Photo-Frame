@@ -59,7 +59,7 @@ Setup a Raspberry Pi with a small 7" or 10" touch screen, run MagicMirror and a 
 - By Default, it's set on a schedule of 7am to 11pm. Durring that time it will show the photo slideshow, outside that time it will dim the modules and show "Good Night" on the screen with no slideshow. This can be changed by editing the "~/MagicMirror/config/config.js" file.
 
 ## Recommendation
-- Follow [this guide](https://docs.magicmirror.builders/configuration/autostart.html) to setup Autostart with PM2. Then you can use the "Exit" button I setup on the system page as well as the [Desktop icon](https://github.com/dansl/MagicMirror-Photo-Frame/raw/refs/heads/main/Start-Slideshow.desktop) by placing it in your "~/Desktop" folder.
+- Setup [Autostart with PM2](https://docs.magicmirror.builders/configuration/autostart.html). 
   - ```sudo npm install -g pm2```
   - ```pm2 startup```
   - ```cd ~```
