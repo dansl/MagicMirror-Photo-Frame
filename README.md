@@ -86,10 +86,10 @@ Setup a Raspberry Pi with a small 7" or 10" touch screen, run MagicMirror and a 
 - 3D Print a shell for your display. I saved a [few here](https://github.com/dansl/MagicMirror-Photo-Frame/tree/main/3D%20Print) that may work.
 
 ## Screenshots
-![Screenshot 1](https://github.com/dansl/MagicMirror-Photo-Frame/blob/7a29c26a3ec8684508ddc74662d76c80fbb34192/screenshots/screenshot1.png)
+![Screenshot 1](https://github.com/dansl/MagicMirror-Photo-Frame/raw/refs/heads/main/screenshots/screenshot1.png)
 
-![Screenshot 2](https://github.com/dansl/MagicMirror-Photo-Frame/blob/7a29c26a3ec8684508ddc74662d76c80fbb34192/screenshots/screenshot2.png)
+![Screenshot 2](https://github.com/dansl/MagicMirror-Photo-Frame/raw/refs/heads/main/screenshots/screenshot2.png)
 
-![Screenshot 3](https://github.com/dansl/MagicMirror-Photo-Frame/blob/7a29c26a3ec8684508ddc74662d76c80fbb34192/screenshots/screenshot3.png)
+![Screenshot 3](https://github.com/dansl/MagicMirror-Photo-Frame/raw/refs/heads/main/screenshots/screenshot3.png)
 
-![Screenshot 4](https://github.com/dansl/MagicMirror-Photo-Frame/blob/7a29c26a3ec8684508ddc74662d76c80fbb34192/screenshots/screenshot4.png)
+![Screenshot 4](https://github.com/dansl/MagicMirror-Photo-Frame/raw/refs/heads/main/screenshots/screenshot4.png)
